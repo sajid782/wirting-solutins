@@ -35,7 +35,7 @@ nav{
 }
 .container-1{
    max-width: 100%;
-   background: url(../banner.png);
+   background: url(../css/banner.png);
    background-size: cover;
    height: 573px;
    
@@ -392,7 +392,7 @@ button:hover {
 }
 
 .gurntee-section{
-   background:url(../banner-2.png);
+   background:url(../css/banner-2.png);
    background-repeat: no-repeat;
    background-size: cover;
 }
