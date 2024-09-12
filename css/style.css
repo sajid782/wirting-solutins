@@ -35,7 +35,7 @@ nav{
 }
 .container-1{
    max-width: 100%;
-   background: url(../images/banner.png);
+   background: url(./banner.png);
    background-size: cover;
    height: 573px;
    
