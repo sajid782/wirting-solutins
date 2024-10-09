@@ -1,3 +1,10 @@
+
+:root {
+    --primary-color:#F39C12; /* Aapka primary color */
+    --secondary-color: #F7F9F9; /* Aapka secondary color */
+    --text-color:#8E44AD;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +17,7 @@ a{
     color: inherit;
 }
 header{
-   background-color: rgb(228, 239, 243);
+    background-color: var(--secondary-color);
    height: 100px;
 }
 
@@ -25,17 +32,20 @@ nav{
 
 }
  .btn-1{
-   background-color: rgb(141, 215, 240);
+   background-color:var(--primary-color);
    padding: 15px;
    border-radius: 10px;
+   border: 1px solid var(--primary-color);
    cursor: pointer;
+   transition: 0.5s;
 }
- .banner-section{
-  
-}
+ .btn-1:hover{
+    border: 1px solid var(--primary-color);
+    background-color: unset;
+ }
 .container-1{
    max-width: 100%;
-   background: url(../css/banner.png);
+   background: url(../image/banner.png);
    background-size: cover;
    height: 573px;
    
@@ -86,7 +96,7 @@ margin-bottom: 20px;
    padding: 20px;
 }
 .card {
-   background-color: rgb(228, 239, 243);
+   background-color: var(--secondary-color);
    border-radius: 8px;
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
    padding: 20px;
@@ -104,7 +114,7 @@ margin-bottom: 20px;
    color: black;
 }
 .red {
-   color:rgb(141, 215, 240);
+   color:var(--primary-color);
 }
 .form-group {
    margin-bottom: 15px;
@@ -132,17 +142,20 @@ input, textarea {
 button {
    width: 100%;
    padding: 10px;
-   background-color: rgb(141, 215, 240);
-   color: white;
+   background-color: var(--primary-color);
+   color:#fff;
    border: none;
    border-radius: 4px;
    cursor: pointer;
    font-size: 16px;
    transition: 0.5s;
+   border: 1px solid var(--primary-color);
+   outline: none;
 }
 button:hover {
- border: 1px solid rgb(141, 215, 240);
+ border: 1px solid var(--primary-color);
  background-color: unset;
+ color: black;
 }
 .container-students {
    max-width: 1200px;
@@ -151,12 +164,12 @@ button:hover {
 }
 .section-title {
    text-align: center;
-   color: rgb(141, 215, 240);
+   color: var(--primary-color);
    font-size: 24px;
    margin-bottom: 20px;
 }
 .star {
-   color: rgb(141, 215, 240);
+   color: var(--primary-color);
    font-size: 24px;
 }
 .services-content {
@@ -176,12 +189,12 @@ button:hover {
 .service-description {
    flex: 1;
    min-width: 300px;
-   background-color: rgb(228, 239, 243);
+   background-color: var(--secondary-color);
    padding: 50px;
    border-radius: 8px;
 }
 .service-title {
-   color: rgb(141, 215, 240);
+   color: var(--primary-color);
    font-size: 20px;
    margin-bottom: 10px;
    display: flex;
@@ -193,17 +206,19 @@ button:hover {
    margin-bottom: 20px;
 }
 .cta-button {
-   background-color: rgb(141, 215, 240);
-   color: #000;
+   background-color: var(--primary-color);
+   color: #fff;
    padding: 10px 20px;
    border: none;
    border-radius: 5px;
    cursor: pointer;
    font-size: 16px;
+   border: 1px var(--primary-color) solid;
    transition: background-color 0.3s ease;
 }
 .cta-button:hover {
-   background-color: lightgray;
+    border: 1px var(--primary-color) solid;
+    color: #000;
 }
 
 .container-3 {
@@ -213,13 +228,13 @@ button:hover {
 }
 .section-title-1 {
    text-align: center;
-   color: rgb(141, 215, 240);
+   color: var(--secondary-color);
    font-size: 28px;
    margin-bottom: 10px;
 }
 .section-divider {
    text-align: center;
-   color:rgb(141, 215, 240);
+   color:var(--primary-color);
    font-size: 24px;
    margin-bottom: 30px;
 }
@@ -242,7 +257,7 @@ button:hover {
    cursor: pointer;
 }
 .service-box:hover {
-   background-color: rgb(228, 239, 243);
+   background-color: var(--secondary-color);
    transform: translateY(-5px);
 }
 .service-icon {
@@ -251,7 +266,7 @@ button:hover {
    margin-bottom: 15px;
 }
 .service-title-1 {
-   color: rgb(141, 215, 240);
+   color:var(--primary-color);
    font-size: 16px;
    font-weight: bold;
 }
@@ -259,9 +274,10 @@ button:hover {
    display: block;
    width: 200px;
    margin: 0 auto;
-   background-color: rgb(141, 215, 240);
-   color: black;
+   background-color:var(--primary-color);
+   color: #fff;
    text-align: center;
+   border: 1px solid var(--primary-color);
    padding: 10px 20px;
    border: none;
    border-radius: 5px;
@@ -270,75 +286,11 @@ button:hover {
    transition:  0.5s;
 }
 .bta-button:hover {
-   background-color: rgb(228, 239, 243);
+   border: 1px solid var(--primary-color);
    color: black;
 }
 
-.sticky-form {
-   position: fixed;
-   left: 0;
-   top: 50%;
-   transform: translateY(-50%);
-   background-color: rgb(228, 239, 243);
-   padding: 20px;
-   border-radius: 0 10px 10px 0;
-   box-shadow: 2px 0 10px rgba(0,0,0,0.1);
-   z-index: 1000;
-   width: 300px;
-   transition: all 0.3s ease;
-}
-.sticky-form.closed {
-   left: -280px;
-}
-.form-title {
-   font-size: 1.2em;
-   margin-bottom: 15px;
-   color: #333;
-}
-.form-group {
-   margin-bottom: 15px;
-}
-.form-label {
-   display: block;
-   margin-bottom: 5px;
-   font-weight: bold;
-}
-.form-input {
-   width: 100%;
-   padding: 8px;
-   border: 1px solid #ddd;
-   border-radius: 4px;
-}
-.form-button {
-   width: 100%;
-   padding: 10px;
-   background-color: rgb(141, 215, 240);;
-   color: black;
-   border: none;
-   border-radius: 4px;
-   cursor: pointer;
-   transition: background-color 0.3s ease;
-}
-.form-button:hover {
-   background-color: rgb(141, 215, 240);
-}
-.toggle-btn {
-   position: absolute;
-   right: -30px;
-   top: 50%;
-   transform: translateY(-50%);
-   background-color: rgb(141, 215, 240);
-   color: black;
-   border: none;
-   width: 31px;
-   padding: 10px;
-   cursor: pointer;
-   border-radius: 0 5px 5px 0;
-   transition: 0.6s;
-}
-.toggle-btn:hover{
-   background-color: rgb(141, 215, 240);
-}
+
 
 .container-4 {
    max-width: 1200px;
@@ -347,7 +299,7 @@ button:hover {
 }
 .section-title {
    text-align: center;
-   color: rgb(141, 215, 240);
+   color: var(--primary-color);
    font-size: 28px;
    margin-bottom: 10px;
 }
@@ -360,10 +312,10 @@ button:hover {
 .divider-line {
    width: 60px;
    height: 2px;
-   background-color: #ffd700;
+   background-color: var(--primary-color);
 }
 .divider-star {
-   color: rgb(141, 215, 240);
+   color: var(--primary-color);
    font-size: 24px;
    margin: 0 10px;
 }
@@ -374,6 +326,7 @@ button:hover {
 }
 .service-box-1 {
    background-color: #fff;
+   border: 5px var(--primary-color) solid;
    border-radius: 8px;
    padding: 20px;
    text-align: center;
@@ -383,16 +336,16 @@ button:hover {
    width: 60px;
    height: 60px;
    margin-bottom: 15px;
-   color: rgb(141, 215, 240);
+   color: var(--primary-color);
 }
 .service-title-3 {
-   color: rgb(141, 215, 240);
+   color: var(--primary-color);
    font-size: 18px;
    font-weight: bold;
 }
 
 .gurntee-section{
-   background:url(../css/banner.png);
+   background:url(../image/banner.png);
    background-repeat: no-repeat;
    background-size: cover;
 }
@@ -415,10 +368,10 @@ button:hover {
 .divider-line {
    width: 100px;
    height: 2px;
-   background-color:rgb(141, 215, 240);
+   background-color:var(--primary-color);
 }
 .divider-star {
-   color: #ffd700;
+   color: var(--primary-color);
    font-size: 24px;
    margin: 0 10px;
 }
@@ -444,23 +397,24 @@ button:hover {
 .guarantee-title {
    font-size: 18px;
    font-weight: bold;
-   color: rgb(141, 215, 240);
+   color: var(--primary-color);
 }
 .btta-button {
    display: block;
    width: 200px;
    margin: 0 auto;
    padding: 10px;
-   background-color: rgb(141, 215, 240);
+   background-color: var(--primary-color);
    color:black;
    text-align: center;
    text-decoration: none;
+   border: 1px solid var(--primary-color);
    border-radius: 5px;
    font-weight: bold;
    transition: 0.5s;
 }
 .btta-button:hover {
-   background-color:rgb(141, 215, 240);
+   border: 1px solid var(--primary-color);
    color: black;
 }
 
@@ -481,7 +435,7 @@ button:hover {
 .underline {
    width: 100px;
    height: 3px;
-   background-color: rgb(141, 215, 240);
+   background-color: var(--primary-color);
    margin-bottom: 30px;
 }
 .cards-1 {
@@ -492,7 +446,7 @@ gap: 20px;
 
 }
 .card-1 {
-   background-color: rgb(228, 239, 243);
+   background-color: var(--secondary-color);
    border-radius: 10px;
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
    padding: 25px;
@@ -502,21 +456,21 @@ gap: 20px;
 }
 .icon {
    font-size: 40px;
-   color: rgb(141, 215, 240);
+   color: var(--primary-color);
    margin-bottom: 10px;
 }
 .card-title-1 {
    font-size: 18px;
    font-weight: bold;
    margin-bottom: 10px;
-   color:  rgb(141, 215, 240);
+   color:  var(--primary-color);
 }
 .card-content-1 {
    font-size: 17px;
    color: #666;
 }
 .button {
-   background-color: rgb(141, 215, 240);
+   background-color: var(--primary-color);
    color: #000;
    border: none;
    padding: 10px 20px;
@@ -528,11 +482,11 @@ gap: 20px;
    transition:  0.3s ease;
 }
 .button:hover {
-   background-color: rgb(141, 215, 240);
+   background-color: var(--primary-color);
 }
 
 .slider-section{
-   background-color: rgb(228, 239, 243);
+   background-color: var(--secondary-color);
    padding: 50px;
    text-align: center;
 }
@@ -577,7 +531,7 @@ gap: 20px;
    color: #333;
 }
 .faq-h1 {
-color: rgb(141, 215, 240);
+color: var(--secondary-color);
    text-align: center;
    margin-bottom: 30px;
 }
@@ -585,7 +539,7 @@ color: rgb(141, 215, 240);
    display: block;
    width: 50px;
    height: 4px;
-   background-color: rgb(141, 215, 240);
+   background-color: var(--primary-color);
    margin: 10px auto;
 }
 .faq-item {
@@ -614,7 +568,7 @@ color: rgb(141, 215, 240);
    font-weight: bold;
 }
 .faq-question:hover {
-   background-color: #f7fafc;
+   background-color: lightgoldenrodyellow;
 }
 .faq-question:after {
    content: '\02795';
@@ -639,15 +593,15 @@ color: rgb(141, 215, 240);
    width: 200px;
    margin: 30px auto;
    padding: 10px;
-   background-color: rgb(141, 215, 240);
-   color: black;
+   background-color: var(--primary-color);
+   color: #ffff;
    text-align: center;
    text-decoration: none;
    border-radius: 5px;
    font-weight: bold;
 }
 .banner {
-   background-color: rgb(141, 215, 240);
+   background-color:var(--primary-color);
    color: white;
    text-align: center;
    padding: 60px 20px;
@@ -690,7 +644,7 @@ color: rgb(141, 215, 240);
    background-color: #f5f5f5;
 }
 .payment-section h2 {
-   color:rgb(141, 215, 240);
+   color:var(--primary-color);
    margin-bottom: 20px;
 }
 .payment-methods {
@@ -705,7 +659,7 @@ color: rgb(141, 215, 240);
    max-width: 150px;
 }
 .footer{
-   background-color:rgb(141, 215, 240);
+   background-color:var(--primary-color);
    color: #fff;
    padding: 30px;
  
